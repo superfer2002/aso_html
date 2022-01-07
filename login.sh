@@ -42,7 +42,7 @@ else
                 <title>The sound of sunshine</title>
             </head>
 
-            <h3><font face="Helvetica" size="20px" color="\#FF7A59">Login</font></h3>
+            <h3><font face="Helvetica" size="10px" color="\#FF7A59">Login</font></h3>
             <h4><p style="color:red">Les dades entrades son incorrectes!</p></h4>
 			<button onclick=\"myFunction()\">Try again</button>
 
