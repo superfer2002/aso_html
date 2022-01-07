@@ -15,7 +15,7 @@ echo -e "<!DOCTYPE html PUBLIC\"-//W3C//DTD HTML 4.01 Strict//EN\"
     </head>
 
     <body>
-        <h3><font face="Helvetica" size="10px" color="\#FF7A59">The sound of sunshine's Menu</font></h3>
+        <h3><font face="Helvetica" size="15px" color="\#FF7A59">The sound of sunshine's Menu</font></h3>
 
         <button onclick=\"processFunction()\">Process Management</button>
         <button onclick=\"monitoringFunction()\">Monitoring</button>
