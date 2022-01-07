@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 echo Content-Type: text/html
 echo
 
@@ -14,11 +13,17 @@ echo -e "<!DOCTYPE html PUBLIC\"-//W3C//DTD HTML 4.01 Strict//EN\"
 <html>
     <head>
         <title>The sound of sunshine</title>
+		<link rel="icon" type="image/jpg" href="Pictures/16250633403413.jpg" />
     </head>
 
     <body>
 
         <h3><font face="Helvetica" size="10px" color="\#3B83BD">Process Management</font></h3>
+		<form action=\"/menu.sh\" method=\"post\" ENCTYPE=\"text/plain\">
+		  <input type=\"submit\" value=\"Main Menu\">
+		</form>
+		<br>
+		<br>
 		<form action=\"/kill.sh\" method=\"get\" ENCTYPE=\"text/plain\">
           <label for=\"user\">Enter process PID:</label><br>
           <input type=\"text\" id=\"task\" name=\"task\"><br>
@@ -33,10 +38,7 @@ echo -e "<!DOCTYPE html PUBLIC\"-//W3C//DTD HTML 4.01 Strict//EN\"
 			i=$(( $i + 1 ))
 		done
 		echo -e "<br>"
-		echo -e "<form action=\"/menu.sh\" method=\"post\" ENCTYPE=\"text/plain\">
-          <input type=\"submit\" value=\"Main Menu\">
-        </form>
+		echo -e "
     </body>
 </html>
 "
-
