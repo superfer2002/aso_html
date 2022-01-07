@@ -1,7 +1,5 @@
 #!/bin/bash
 
-ip4=$(/sbin/ip -o -4 addr list wlan0 | awk '{print $4}' | cut -d/ -f1)
-
 echo Content-Type: text/html
 echo
 
@@ -12,32 +10,51 @@ echo -e "<!DOCTYPE html PUBLIC\"-//W3C//DTD HTML 4.01 Strict//EN\"
     <head>
         <title>The sound of sunshine</title>
 		<link rel="icon" type="image/jpg" href="Pictures/16250633403413.jpg" />
+		<style>
+		ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: #0099CC;
+		}
+
+		li {
+		  float: left;
+		}
+
+		li a {
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+
+		li a:hover {
+		  background-color: #111;
+		}
+		</style>
     </head>
 
     <body>
         <h3><font face="Helvetica" size="15px" color="\#FF7A59">The sound of sunshine's Menu</font></h3>
 
-        <button onclick=\"processFunction()\">Process Management</button>
-        <button onclick=\"monitoringFunction()\">Monitoring</button>
-        <button onclick=\"offFunction()\">Turn Off</button>
-        <button onclick=\"restartFunction()\">Restart</button>
-        <button onclick=\"logsFunction()\">Logs Management</button>
-        <button onclick=\"usersFunction()\">Users Management</button>
-        <button onclick=\"packetFunction()\">Packet Filtering</button>
-        <button onclick=\"tasksFunction()\">Pre-programmed tasks Management</button>
-        <button onclick=\"musicalFunction()\">Musical Functionalities</button>
+		<ul>
+		  <li><a href=\"pmanagement.sh\">Process Management</a></li>
+		  <li><a href=\"monitor.sh\">Monitoring</a></li>
+		  <li><a href=\"turnoff.sh\">Turn Off</a></li>
+		  <li><a href=\"restart.sh\">Restart</a></li>
+          <li><a href=\"monitor.sh\">Logs Management</a></li>
+		  <li><a href=\"monitor.sh\">Users Management</a></li>
+		  <li><a href=\"monitor.sh\">Packet Filtering</a></li>
+		  <li><a href=\"monitor.sh\">Pre-programmed tasks Management</a></li>
+          <li><a href=\"monitor.sh\">Musical Functionalities</a></li>
+		</ul>
 
-        <script>
-        function offFunction() {
-            location.replace(\"http://$ip4/turnoff.sh\")
-        }
-        function processFunction() {
-            location.replace(\"http://$ip4/pmanagement.sh\")
-        }
-		function restartFunction() {
-			location.replace(\"http://$ip4/restart.sh\")
-		}
-        </script>
+		<br>
+		<img src="Pictures/xokitas.jpg">
+
     </body>
 </html>
 "
