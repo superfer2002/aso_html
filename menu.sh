@@ -9,7 +9,6 @@ echo -e "<!DOCTYPE html PUBLIC\"-//W3C//DTD HTML 4.01 Strict//EN\"
 <html>
     <head>
         <title>The sound of sunshine</title>
-		<link rel="icon" type="image/jpg" href="Pictures/16250633403413.jpg" />
 		<style>
 		ul {
 		  list-style-type: none;
@@ -45,17 +44,15 @@ echo -e "<!DOCTYPE html PUBLIC\"-//W3C//DTD HTML 4.01 Strict//EN\"
 		  <li><a href=\"monitor.sh\">Monitoring</a></li>
 		  <li><a href=\"turnoff.sh\">Turn Off</a></li>
 		  <li><a href=\"restart.sh\">Restart</a></li>
-          <li><a href=\"monitor.sh\">Logs Management</a></li>
-		  <li><a href=\"monitor.sh\">Users Management</a></li>
-		  <li><a href=\"monitor.sh\">Packet Filtering</a></li>
-		  <li><a href=\"monitor.sh\">Pre-programmed tasks Management</a></li>
-          <li><a href=\"monitor.sh\">Musical Functionalities</a></li>
+          <li><a href=\"logmanagement.sh\">Logs Management</a></li>
+		  <li><a href=\"usermanagement.sh\">Users Management</a></li>
+		  <li><a href=\"pfilter.sh\">Packet Filtering</a></li>
+		  <li><a href=\"cron.sh\">Pre-programmed tasks Management</a></li>
+          <li><a href=\"music.sh\">Musical Functionalities</a></li>
 		</ul>
 
 		<br>
-		<img src="Pictures/xokitas.jpg">
 
     </body>
 </html>
 "
-

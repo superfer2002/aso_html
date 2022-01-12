@@ -18,7 +18,7 @@ echo -e "<!DOCTYPE html PUBLIC\"-//W3C//DTD HTML 4.01 Strict//EN\"
 	<head>
 		<title>The sound of sunshine</title>
 		<meta http-equiv="refresh" content=\"2; url =
-		http://$ip4/menu.sh\" />
+		http://$ip4/usermanagement.sh\" />
 	</head>
 
 	<body>
@@ -29,4 +29,3 @@ echo -e "<!DOCTYPE html PUBLIC\"-//W3C//DTD HTML 4.01 Strict//EN\"
 
 </html>
 "
-

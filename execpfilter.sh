@@ -45,4 +45,3 @@ if [ $rango == "unico" ]; then
 else
 	$(sudo iptables -A $direction -s $ip -p $protocol -dport $port -j $rule)
 fi
-

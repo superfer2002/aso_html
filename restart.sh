@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ip4=$(/sbin/ip -o -4 addr list wlan0 | awk '{print $4}' | cut -d/ -f1)  #saber la ip de la nostra raspberry
+ip4=$(/sbin/ip -o -4 addr list wlan0 | awk '{print $4}' | cut -d/ -f1)
 
 echo Content-Type: text/html
 echo
@@ -11,6 +11,7 @@ echo -e "<!DOCTYPE html PUBLIC\"-//W3C//DTD HTML 4.01 Strict//EN\"
 <html>
         <head>
             <title>The sound of sunshine</title>
+			<link rel="icon" type="image/jpg" href="Pictures/16250633403413.jpg" />
 			<meta http-equiv="refresh" content=\"2; url =
             http://$ip4/reboot.sh\" />
         </head>

@@ -15,6 +15,7 @@ echo -e "<!DOCTYPE html PUBLIC\"-//W3C//DTD HTML 4.01 Strict//EN\"
 <html>
     <head>
         <title>The sound of sunshine</title>
+		<link rel="icon" type="image/jpg" href="Pictures/16250633403413.jpg" />
     </head>
 
     <body>

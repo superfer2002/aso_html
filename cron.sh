@@ -77,4 +77,3 @@ echo -e "<!DOCTYPE html PUBLIC\"-//W3C//DTD HTML 4.01 Strict//EN\"
         </body>
     </html>
     "
-

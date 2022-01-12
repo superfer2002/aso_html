@@ -5,7 +5,7 @@ echo
 dades=$(echo $QUERY_STRING)
 v=$(echo $dades | awk -F= '{print $2}')
 
-#$(sudo kill -9 $v)
+$(sudo kill -9 $v)
 
 echo -e "<!DOCTYPE html PUBLIC\"-//W3C//DTD HTML 4.01 Strict//EN\"
         \"http://www.w3.org/TR/html4/strict.dtd\">
@@ -13,6 +13,7 @@ echo -e "<!DOCTYPE html PUBLIC\"-//W3C//DTD HTML 4.01 Strict//EN\"
 <html>
     <head>
         <title>The sound of sunshine</title>
+		<link rel="icon" type="image/jpg" href="Pictures/16250633403413.jpg" />
     </head>
 
     <body>
